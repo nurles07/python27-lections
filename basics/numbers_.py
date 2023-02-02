@@ -96,6 +96,5 @@ divmod(17,3) #
 # sqrt - нахождение квадратного корня 
 from math import sqrt 
 sqrt(25) # 5
-sqrt(9) #3 
-sqrt(3) #3
-
+sqrt(9) # 3 
+sqrt(3) # 
