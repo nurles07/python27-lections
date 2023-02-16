@@ -5,8 +5,8 @@ string1 = 'строка в одинарных кавычках'
 string2 = "строка в двойных кавычках"  # bez raznicy kakie kavy4ki
 string3 = "Don't" # можно мутить внутри
 string4 = 'Study in "Makers Incubator"' # можно внутри мутить
-string5 = 'dbsfhkdbks
-sdfbsjk'  # так нельзя
+string5 = 'dbsfhkdbks'
+#sdfbsjk'  # так нельзя
 string6 = '''ahsufbakfek
 bfsjk
 bsd
@@ -65,11 +65,11 @@ string56[::2] # 'hlowrd' срезает каждую вторую
 "=========форматирование строк======="
 title = "пирог"
 price = 35
-string = f'Название: {title}, цена: {prise}'
+string = f'Название: {title}, цена: {prise}
 # название: Пирог, цена: 35
 
 format = "Название: %s, цена: %s "
-print(format1 % ("яблоко", 80))
+print(format % ("яблоко", 80))
 # название: яблоко, цена: 80
 
 
