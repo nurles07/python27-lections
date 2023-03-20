@@ -1,6 +1,6 @@
 class CreatMixin:
     def produt_create(self, title, price):
-        # self.__class__ - обращение к классу, кот орый наследовался от этого миксина
+        # self.__class__ - обращение к классу, который наследовался от этого миксина
         model = self.__class__
         obj = model()
         _id = model._id
