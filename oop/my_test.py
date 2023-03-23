@@ -1,0 +1,149 @@
+###  Check yourself  20.03    
+# class Person:
+#   __name = None
+#   __last_name = None
+#   __age = None
+#   __email = None
+#   def get_name(self):
+#     return self.__name
+#   def get_last_name(self):
+#     return self.__last_name
+#   def get_age(self):
+#     return self.__age
+#   def get_email(self):
+#     return self.__email
+
+#   def set_name(self, new_name):
+#     self.__name = new_name
+#     return self.__name
+#   def set_last_name(self, new_last_name):
+#     self.__last_name = new_last_name
+#     return self.__last_name
+#   def set_age(self, new_age):
+#     self.__age = new_age
+#     return self.__age
+#   def set_email(self, new_email):
+#     self.__email = new_email
+#     return self.__email
+  
+
+# john = Person()
+# print(john.get_name()) # None
+# print(john.get_last_name()) # None
+# print(john.get_age()) # None
+# print(john.get_email()) # None
+# john.set_name('John')
+# john.set_last_name('Snow')
+# john.set_age(30)
+# john.set_email('johnsnow@gmail.com')
+# print(john.get_name()) # John
+# print(john.get_last_name()) # Snow
+# print(john.get_age()) # 30
+# print(john.get_email()) # johnsnow@gmail.com
+
+
+
+
+
+
+
+# class Person:
+#   def __init__(self,name=None,last_name=None,age=None,email=None):
+#     self.__name = name
+#     self.__last_name = last_name
+#     self.__age = age
+#     self.__email = email
+
+#   def get_name(self):
+#     return self.__name
+
+#   def set_name(self,name):
+#     self.__name = name
+#     return self.__name
+
+#   def get_last_name(self):
+#     return self.__last_name
+
+#   def set_last_name(self,last_name):
+#     self.__last_name = last_name
+#     return self.__last_name
+
+#   def get_age(self):
+#     return self.__age
+
+#   def set_age(self,age):
+#     self.__age = age
+#     return self.__age
+
+#   def get_email(self):
+#     return self.__email
+
+#   def set_email(self,email):
+#     self.__email = email
+#     return self.__email
+
+# john = Person()
+# print(john.get_name()) # None
+# print(john.get_last_name()) # None
+# print(john.get_age()) # None
+# print(john.get_email()) # None
+# john.set_name('John')
+# john.set_last_name('Snow')
+# john.set_age(30)
+# john.set_email('johnsnow@gmail.com')
+# print(john.get_name()) # John
+# print(john.get_last_name()) # Snow
+# print(john.get_age()) # 30
+# print(john.get_email()) # johnsnow@gmail.com
+
+
+# class Person:
+#     def __init__(self):
+#         self.__name = None
+#         self.__last_name = None
+#         self.__age = None
+#         self.__email = None
+
+#     def get_name(self):
+#         return self.__name
+
+#     def set_name(self, name):
+#         self.__name = name
+
+#     def get_last_name(self):
+#         return self.__last_name
+
+#     def set_last_name(self, last_name):
+#         self.__last_name = last_name
+
+#     def get_age(self):
+#         return self.__age
+
+#     def set_age(self, age):
+#         self.__age = age
+
+#     def get_email(self):
+#         return self.__email
+
+#     def set_email(self, email):
+#         self.__email = email
+
+# john = Person()
+# print(john.get_name()) # None
+# print(john.get_last_name()) # None
+# print(john.get_age()) # None
+# print(john.get_email()) # None
+# john.set_name('John')
+# john.set_last_name('Snow')
+# john.set_age(30)
+# john.set_email('johnsnow@gmail.com')
+# print(john.get_name()) # John
+# print(john.get_last_name()) # Snow
+# print(john.get_age()) # 30
+# print(john.get_email()) # johnsnow@gmail.com
+
+
+
+
+
+
