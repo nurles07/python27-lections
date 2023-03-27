@@ -146,4 +146,40 @@
 
 
 
+# arr = []
+# with open("27-B_demo.txt") as file:
+#     for f in file.readlines():
+#         arr.append(f.strip().split())
+# arr = list(map(lambda i: [int(i[0]), int(i[1])], arr[1:]))
+
+# sums = [0, 0, 0]
+# for a, b in arr:
+#     sums_new = [0, 0, 0]
+#     for i in range(3):
+#         sums_new[i] = max(sums[(i-a)%3] + a, sums[(i-b)%3] + b)
+#     sums = sums_new
+
+# print(sums[1])
+
+
+
+# arr = []
+# with open("27-B_demo.txt") as file:
+#     for f in file.readlines():
+#         arr.append(f.strip().split())
+# arr = list(map(lambda i: [int(i[0]), int(i[1])], arr[1:]))
+
+# sum = 0
+# for a, b in arr:
+#     if a % 3 == 0:
+#         if b % 3 == 0:
+#             continue
+#         else:
+#             sum += b
+#     elif b % 3 == 0:
+#         sum += a
+#     else:
+#         sum += max(a, b)
+
+# print(sum)
 
