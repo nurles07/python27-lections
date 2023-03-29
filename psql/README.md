@@ -132,8 +132,10 @@ ALTER TABLE name_of_table ALTER COLUMN col_name SET DATA TYPE new_type;
 ```
 
 # Ограничение (constraints)
-* UNIQUE - не разрешает дубликаты
-* NOT NULL - требует обязательного заполнение поля
+* `UNIQUE` - не разрешает дубликаты
+* `NOT NULL` - требует обязательного заполнение поля
+* `PRIMARY KEY` - как UNIQUE и NOT NULL + строит binary tree для быстрого поиска
+* `FOREIGN KEY` - ссылается на pk  в другой таблице и проверяет, существует ли такое id
 
 
 # СВЯЗИ
@@ -151,4 +153,27 @@ ALTER TABLE name_of_table ALTER COLUMN col_name SET DATA TYPE new_type;
 > Многие ко многим (many to many)
 * один разработчик - много проектовю один проект - много
 
+## реализация one2many в postgres
+```sql
+CREATE TABLE blogger(
+    id serial PRIMARY KEY,
+    name varchar(50),
+    age int
+);
 
+CREATE TABLE post (
+    id serial PRIMARY KEY,
+    title varchar(100),
+    body text,
+    blogger_id int,
+
+    CONSTRAINT fk_post_blogger
+    FOREIGN KEY (blogger_id) REFERENCES blogger (id)
+);
+```
+
+# JOINS
+> **JOIN** - инструкция, которая позваляет одним SELECT, брать данные из двух таблиц (у которых есть связанные поля)
+
+> **INNER JOIN (JOIN)** - достаются записи у которых есть данные в обоих таблицах
+>**FULL JOIN** - достаются все записи и спервой таблицы и со второй  
